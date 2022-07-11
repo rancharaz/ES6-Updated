@@ -1,0 +1,13 @@
+#box {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+#box > div {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 6px;
+    cursor: pointer;
+}
