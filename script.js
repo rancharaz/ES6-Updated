@@ -239,3 +239,129 @@ function marketing({ cost, activity }) {
 }
 
 console.log(marketing(vacation)); */
+
+
+
+
+
+/* 
+for (let letter of "Javascript") {
+    console.log(letter)
+} */
+
+/* let topics = ["Javascript", "csharp", "java", "python"];
+
+for (let topic of topics) {
+    console.log(topic)
+} */
+
+
+
+/* let topics = new Map();
+
+topics.set("Html", "/topic/html");
+topics.set("CSS", "/topic/css");
+topics.set("Javascript", "/topic/javascript");
+ */
+
+/* for (let topic of topics) {
+    console.log(topic)
+} */
+
+/* for (let topic of topics.keys()) {
+    console.log(topic)
+}
+
+for (let route of topics.values()) {
+    console.log(`The course can be found at ${route}`)
+}
+
+
+for (let topic of topics.entries()) {
+    console.log(topic)
+}
+ */
+
+
+
+
+
+
+
+
+
+/* class vehicules {
+    constructor(description, wheels) {
+        this.description = description;
+        this.wheels = wheels
+    }
+
+    describeYourself() {
+        console.log(`I am a ${this.description} with ${this.wheels} wheels`)
+    }
+} */
+
+/* let vehiculesAll = new vehicules("BMW", 4);
+
+vehiculesAll.describeYourself() */
+
+
+/* class Suv extends vehicules {
+    constructor() {
+        super("Audi", 8)
+    }
+}
+let allSuv = new Suv();
+allSuv.describeYourself() */
+
+
+
+
+
+
+
+
+/* let attendance = {
+    _list: [],
+    set addName(name) {
+        this._list.push(name);
+    },
+    get list() {
+        return this._list.join(", ")
+    }
+}
+
+function getAllData() {
+    var test = document.getElementById("test").value;
+    let push = document.querySelector("#box");
+
+    attendance.addName = test;
+    push.innerHTML = attendance._list;
+} */
+/* 
+
+
+
+
+attendance.addName = "Yoan barbe";
+attendance.addName = "Yogesh Bissessur";
+
+console.log(attendance.list) */
+
+
+class hike {
+    constructor(distance, pace) {
+        this.distance = distance;
+        this.pace = pace
+    }
+    get lengthHours() {
+        return `${this.calcLength()} hours`;
+    }
+
+    calcLength() {
+        return this.distance / this.pace;
+    }
+}
+
+const pieterBoth = new hike(2, 50);
+console.log(pieterBoth.lengthHours)
