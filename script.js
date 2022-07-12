@@ -349,7 +349,10 @@ attendance.addName = "Yogesh Bissessur";
 console.log(attendance.list) */
 
 
-class hike {
+
+
+
+/* class hike {
     constructor(distance, pace) {
         this.distance = distance;
         this.pace = pace
@@ -364,4 +367,40 @@ class hike {
 }
 
 const pieterBoth = new hike(2, 50);
-console.log(pieterBoth.lengthHours)
+console.log(pieterBoth.lengthHours) */
+
+
+
+
+
+/* let data = "My name is ranveer";
+console.log(data.repeat(6)) */
+
+
+
+/* function add(x, y) {
+    return x + y;
+}
+console.log(add(10, 5));
+
+ */
+
+/* function haveFun(activity = "hiking",
+    time = 3) {
+    console.log(`Today I will go to ${activity} for ${time} hours`)
+}
+
+haveFun() */
+
+
+
+
+/* let student = (students) => {
+    console.log(students)
+}
+
+student(["Ranveer", "Ancharaz"])
+
+
+let list = ["apple", "banana", "strawberry"];
+list.map((item) => console.log(item)) */
