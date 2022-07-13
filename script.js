@@ -404,3 +404,110 @@ student(["Ranveer", "Ancharaz"])
 
 let list = ["apple", "banana", "strawberry"];
 list.map((item) => console.log(item)) */
+
+
+/* promises */
+
+
+/* const delay = (seconds) =>
+
+    new Promise((resolve, reject) => {
+
+        if (typeof seconds !== "number") {
+            reject(new Error("Seconds must be a number"))
+        }
+
+        setTimeout(resolve, seconds * 1000)
+    }
+    );
+
+console.log("Test")
+
+delay(1).then(() => console.log("test"))
+delay(5).then(() => console.log("test 5")) */
+
+
+
+
+
+/* const spacePeople = () => {
+
+    return new Promise((resolve, reject) => {
+        const api = "http://api.open-notify.org/astros.json";
+
+        const request = new XMLHttpRequest();
+        request.open("GET", api);
+
+        request.onload = () => {
+            if (request.status === 200) {
+                resolve(JSON.parse(request.response));
+            } else {
+                reject(Error(request.statusText))
+            }
+        }
+        request.onerror = (err) => reject(err);
+        request.send()
+    })
+}
+spacePeople().then(
+    (spaceData) => console.log(spaceData),
+
+    (err) => console.error(new Error("Can't load people"))
+) */
+
+
+
+
+
+
+/* let spacePeople = () => fetch("http://api.open-notify.org/astros.json")
+    .then(res => res.json())
+
+
+let spaceNames = () =>
+    spacePeople().then(json => json.people)
+        .then(people => people.map(p => p.name))
+        .then((names) => names.join(" , "))
+spaceNames().then(console.log)
+ */
+
+
+
+/* const delay = (seconds) =>
+    new Promise((resolve) =>
+        setTimeout(resolve, seconds * 1000))
+
+
+const countSeconds = async () => {
+    console.log("zero seconds")
+
+    await delay(1);
+    console.log("ONE");
+
+
+    await delay(5);
+    console.log("Five");
+
+
+    await delay(8);
+    console.log("Eight");
+}
+
+countSeconds() */
+
+
+
+
+
+/* const githubRequest = async (login) => {
+
+    let response = await fetch(
+        `https://api.github.com/users/${login}`
+    );
+    let json = await response.json();
+
+    let summary = `${json.name}, ${json.company}`
+    console.log(summary)
+}
+
+githubRequest("rancharaz") */
