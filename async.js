@@ -52,6 +52,8 @@ get(url).then(function (result) {
 
 
 
+
+
 /*
 var url = '"https://jsonplaceholder.typicode.com/posts"'
 
@@ -109,3 +111,16 @@ function get(url) {
 }).finally(function () {
     console.log(false)
 }) */
+
+
+
+
+
+
+
+
+
+
+
+
+
